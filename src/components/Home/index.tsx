@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 import { Container, SearchIcon, SearchForm } from "./styles";
 
-import GithubTitulo from "../../components/GithubTitulo";
+import GithubTitulo from "../GithubTitulo";
 
-const Header: React.FC = () => {
+const Home: React.FC = () => {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
 
@@ -33,4 +33,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Home;

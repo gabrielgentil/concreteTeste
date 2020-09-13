@@ -1,12 +1,12 @@
 import React from "react";
 
 import { Container, Main, RightSide } from "./styles";
-import Home from "../../pages/Home";
+import Header from "../../pages/Header";
 
 const UserNotFound: React.FC = () => {
   return (
     <Container>
-      <Home />
+      <Header />
       <Main>
         <RightSide>
           <div>

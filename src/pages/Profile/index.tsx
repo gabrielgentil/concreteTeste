@@ -5,7 +5,7 @@ import { Container, Main, LeftSide, RightSide, Repos } from "./styles";
 
 import ProfileData from "../../components/ProfileData";
 import RepoCard from "../../components/RepoCard";
-import Home from "../Home";
+import Header from "../Header";
 import UserNotFound from "../../components/UserNotFound";
 import Loading from "../../components/Loading";
 import { APIrepo, APIuser } from "../../@types";
@@ -50,9 +50,11 @@ const Profile: React.FC = () => {
     return <Loading />;
   }
 
+  data.repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+
   return (
     <Container>
-      <Home />
+      <Header />
 
       <Main>
         <LeftSide>

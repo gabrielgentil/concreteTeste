@@ -5,7 +5,7 @@ import GithubTitulo from "../../components/GithubTitulo";
 
 import { Container, SearchForm, SearchIcon } from "./styles";
 
-const Home: React.FC = () => {
+const Header: React.FC = () => {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
 
@@ -32,4 +32,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Header;
