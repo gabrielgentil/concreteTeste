@@ -4,16 +4,16 @@ import { Container, Topside, Botside, StarIcon } from "./styles";
 
 interface Props {
   reponame: string;
-  descripition?: string;
+  description?: string;
   stars: number;
 }
 
-const RepoCard: React.FC<Props> = ({ reponame, descripition, stars }) => {
+const RepoCard: React.FC<Props> = ({ reponame, description, stars }) => {
   return (
     <Container>
       <Topside>
         <header>{reponame}</header>
-        <p>{descripition}</p>
+        <p>{description}</p>
       </Topside>
       <Botside>
         <ul>

@@ -28,7 +28,7 @@ export const LeftSide = styled.div`
 `;
 
 export const RightSide = styled.div`
-  margin-left: -4px;
+  margin-left: 2em;
   @media (min-width: 768px) {
     width: 75%;
   }

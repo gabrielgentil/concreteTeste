@@ -14,7 +14,7 @@ export const Topside = styled.div`
     display: flex;
     align-items: center;
     font-size: 35px;
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     color: var(--button);
 
     > p {

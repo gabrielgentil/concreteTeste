@@ -5,6 +5,8 @@ import {
   RiMapPin2Line,
   RiMailLine,
   RiLinksLine,
+  RiStarLine,
+  RiInboxLine,
 } from "react-icons/ri";
 
 export const Container = styled.div``;
@@ -117,5 +119,13 @@ export const EmailIcon = styled(RiMailLine)`
 `;
 
 export const BlogIcon = styled(RiLinksLine)`
+  ${iconCSS}
+`;
+
+export const StarIcon = styled(RiStarLine)`
+  ${iconCSS}
+`;
+
+export const RepoIcon = styled(RiInboxLine)`
   ${iconCSS}
 `;

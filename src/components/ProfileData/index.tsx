@@ -11,6 +11,8 @@ import {
   LocationIcon,
   EmailIcon,
   BlogIcon,
+  StarIcon,
+  RepoIcon,
 } from "./styles";
 
 interface Props {
@@ -23,6 +25,8 @@ interface Props {
   location?: string;
   email?: string;
   blog?: string;
+  totalStars?: number;
+  totalRepos?: number;
 }
 
 const ProfileData: React.FC<Props> = ({
@@ -35,6 +39,8 @@ const ProfileData: React.FC<Props> = ({
   location,
   email,
   blog,
+  totalStars,
+  totalRepos,
 }) => {
   return (
     <Container>
@@ -83,6 +89,16 @@ const ProfileData: React.FC<Props> = ({
           <li>
             <BlogIcon />
             <span>{blog}</span>
+          </li>
+        )}
+        <li>
+          <StarIcon />
+          <span>{totalStars}</span>
+        </li>
+        {totalRepos && (
+          <li>
+            <RepoIcon />
+            <span>{totalRepos}</span>
           </li>
         )}
       </Column>

@@ -52,6 +52,13 @@ const Profile: React.FC = () => {
 
   data.repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
+  const totalStars = data.repos.reduce(
+    (total, value) => total + value.stargazers_count,
+    0
+  );
+
+  const totalRepos = data.repos.length;
+
   return (
     <Container>
       <Header />
@@ -68,6 +75,8 @@ const Profile: React.FC = () => {
             location={data.user.location}
             email={data.user.email}
             blog={data.user.blog}
+            totalStars={totalStars}
+            totalRepos={totalRepos}
           />
         </LeftSide>
         <RightSide>
@@ -77,7 +86,7 @@ const Profile: React.FC = () => {
                 <RepoCard
                   key={item.name}
                   reponame={item.name}
-                  descripition={item.descripition}
+                  description={item.description}
                   stars={item.stargazers_count}
                 />
               ))}

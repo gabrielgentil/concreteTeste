@@ -18,5 +18,5 @@ export interface APIrepo {
   };
   stargazers_count: number;
   html_url: string;
-  descripition?: string;
+  description?: string;
 }
