@@ -29,8 +29,13 @@ export const LeftSide = styled.div`
 
 export const RightSide = styled.div`
   margin-left: 2em;
+
   @media (min-width: 768px) {
     width: 75%;
+  }
+
+  @media (max-width: 1440px) {
+    margin-left: 4em;
   }
 `;
 
